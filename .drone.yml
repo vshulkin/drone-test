@@ -30,3 +30,6 @@ steps:
       from_secret: kubernetes_token
   commands:
     - kubectl apply -f deployment.yml
+    
+
+
