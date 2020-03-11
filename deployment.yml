@@ -30,7 +30,7 @@ spec:
    spec:
      containers:
      - name: app
-       image: "harbor.local.unixexpo.com/drone-test/"
+       image: "harbor.local.unixexpo.com/drone-test/my-app"
        resources:
          requests:
            cpu: 10m
