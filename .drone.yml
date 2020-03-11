@@ -14,7 +14,7 @@ steps:
   image: plugins/docker
   settings:
     registry: harbor.local.unixexpo.com
-    repo: drone-test/myapp
+    repo: harbor.local.unixexpo.com/drone-test
     tags: [ "${DRONE_COMMIT_SHA:0:7}","latest" ]
     username:
       from_secret: docker_username
