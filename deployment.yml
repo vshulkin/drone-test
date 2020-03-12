@@ -30,7 +30,16 @@ spec:
    spec:
      containers:
      - name: app
-       image: "harbor.local.unixexpo.com/drone-test/my-app:latest"
+       image: harbor.local.unixexpo.com/drone-test/my-app:latest
+       imagePullPolicy: Always
+       securityContext:
+         allowPrivilegeEscalation: false
+         capabilities: {}
+         privileged: false
+         readOnlyRootFilesystem: false
+         runAsNonRoot: false
        resources:
          requests:
            cpu: 10m
+     imagePullSecrets:
+     - name: harbor-local
