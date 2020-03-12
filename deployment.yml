@@ -19,7 +19,7 @@ metadata:
  labels:
    role: app
 spec:
- replicas: 2
+ replicas: 1
  selector:
    matchLabels:
      role: app
@@ -30,7 +30,8 @@ spec:
    spec:
      containers:
      - name: app
-       image: "harbor.local.unixexpo.com/drone-test/my-app:latest"
+       image: "harbor.local.unixexpo.com/drone-test/my-app"
+       tag: latest
        resources:
          requests:
            cpu: 10m
