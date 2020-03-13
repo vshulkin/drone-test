@@ -30,7 +30,7 @@ steps:
     kubernetes_token:
       from_secret: kubernetes_token
   commands:
-    - kubectl apply -n drone -f deployment.yml
+    - kubectl apply -f deployment.yml
     
 
 
